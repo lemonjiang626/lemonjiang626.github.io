@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>开始我的博客 | lemonjiang626</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="http://lemonjiang626.github.io/favicon.ico?v=1747274099161">
+<link rel="stylesheet" href="http://lemonjiang626.github.io/styles/main.css">
+
+
+  
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css" />
+  
+
+  
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="🏠 关于本站
+目前想的更新内容：
+
+机器学习。主要根据李航《统计学习方法》中的内容。
+大模型。
+数据分析。
+后面想到其他的再更新吧。
+
+👨‍💻 博主是谁
+xxx
+⛹ 兴趣爱好
+xxx
+📬 联系我呀
+email：jxl19045030..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="http://lemonjiang626.github.io">
+        <img src="http://lemonjiang626.github.io/images/avatar.png?v=1747274099161" class="site-logo">
+        <h1 class="site-title">lemonjiang626</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      持续更新中
+    </div>
+    <div class="site-footer">
+      Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a> | <a class="rss" href="http://lemonjiang626.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">开始我的博客</h2>
+            <div class="post-date">2025-05-07</div>
+            
+              <div class="feature-container" style="background-image: url('http://lemonjiang626.github.io/post-images/cao-gao.JPG')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <h2 id="关于本站">🏠 关于本站</h2>
+<p>目前想的更新内容：</p>
+<ol>
+<li>机器学习。主要根据李航《统计学习方法》中的内容。</li>
+<li>大模型。</li>
+<li>数据分析。<br>
+后面想到其他的再更新吧。</li>
+</ol>
+<h2 id="博主是谁">👨‍💻 博主是谁</h2>
+<p>xxx</p>
+<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
+<p>xxx</p>
+<h2 id="联系我呀">📬 联系我呀</h2>
+<p>email：jxl1904503013@163.com</p>
+
+            </div>
+            
+            
+
+            
+              
+                <div id="gitalk-container" data-aos="fade-in"></div>
+              
+
+              
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+  
+    <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    <script>
+
+      var gitalk = new Gitalk({
+        clientID: 'Ov23li0GWcOGndjmvjyp',
+        clientSecret: 'af544237ede3806800a70176b92b15af2346fc6e',
+        repo: 'lemonjiang626.github.io',
+        owner: 'lemonjiang626',
+        admin: ['lemonjiang626'],
+        id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+        distractionFreeMode: false  // Facebook-like distraction free mode
+      })
+
+      gitalk.render('gitalk-container')
+
+    </script>
+  
+
+  
+
+
+
+
+  </body>
+</html>
